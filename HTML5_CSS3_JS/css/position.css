@@ -1,0 +1,94 @@
+* {
+
+}
+
+html {
+
+}
+
+body {
+
+}
+
+h1, h2 {
+    text-align: center;
+}
+h3 {
+    text-decoration-line: underline;
+}
+p {
+
+}
+blockquote {
+    font-weight: bold;
+}
+a {
+
+}
+div {
+    background-color: darkred;
+    opacity: 0.3;
+    width: 300px;
+    height: 300px;
+}
+.static {
+    position: static; /*(default)*/
+}
+.relative {
+    position: relative;
+    top: 70px;
+    left: 100px;
+}
+.absolute {
+    background-color: black;
+    opacity: 1.2;
+    width: 200px;
+    height: 200px;
+/* default position is top-left*/
+    position: absolute; /* Works according to relative position */
+    /*top: 20px;*/
+    /*left: auto;*/
+    right: 0;
+    bottom: 0;
+}
+.fixed {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    right: 50px;
+    bottom: 50px;
+}
+.sticky {
+    background-color: darkgreen;
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    /*bottom: 100px;*/
+    top: 0;
+}
+.z-index {
+    background-color: magenta;
+    opacity: 0.8;
+    width: 100%;
+    height: 100px;
+    /*bottom: 100px;*/
+    bottom: 0;
+    position: sticky;
+    /*z-index: -1;*/
+    z-index: 1;
+}
+.child-1 {
+    background-color: dodgerblue;
+}
+.child-2 {
+    background-color: darkgoldenrod;
+}
+.child-3 {
+    background-color: lawngreen;
+}
+.parent, .last {
+    background-color: #222222;
+    width: 300px;
+    height: 300px;
+
+}
