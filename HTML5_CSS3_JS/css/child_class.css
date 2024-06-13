@@ -1,0 +1,97 @@
+* {
+
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+
+}
+
+p {
+    margin: 0;
+    padding-top: 15px;
+    color: white;
+    /*vertical-align: center;*/
+    /*horiz-align: center;*/
+}
+
+a {
+
+}
+
+.parent {
+    /*margin: auto;*/
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.child {
+    background-color: maroon;
+    width: 50px;
+    /*padding-top: 10px;*/
+    padding: 5px;
+    height: 50px;
+    margin-bottom: 10px;
+    /*margin: auto;*/
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* n-th child Design */
+.child:first-child {
+    background-color: #222222;
+}
+.child:last-child {
+    background-color: #555555;
+}
+.child:nth-child(5) {
+    background-color: blue;
+}
+.child:nth-last-child(2) {
+    background-color: darkgreen;
+}
+.child:nth-child(odd) {
+    /*background-color: darkgreen;*/
+}
+.child:nth-child(even) {
+    /*background-color: darkgreen;*/
+}
+.child:nth-child(2n+1) {
+    /*background-color: darkgreen;*/
+}
+.child:nth-child(2n) {
+    /*background-color: darkgreen;*/
+}
+.child:nth-child(4n-1) {
+    /*background-color: darkgreen;*/
+}
+
+form {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+input[type=search] {
+    border: 1px solid mediumaquamarine;
+    border-radius: 5px;
+    padding: 10px;
+    color: #222222;
+    float: left;
+}
+input[type=button] {
+    border: 1px solid mediumaquamarine;
+    border-radius: 5px;
+    padding: 10px;
+    color: #222222;
+    background-color: coral;
+    margin-left: -5px;
+    display: none;
+    transition: .3s;
+    /*float: right;*/
+}
+input:not(:placeholder-shown) + input[type=button] {
+    display: block;
+}

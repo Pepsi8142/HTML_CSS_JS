@@ -1,0 +1,35 @@
+* {
+
+}
+
+html {
+
+}
+
+body {
+
+}
+
+h1, h2 {
+    text-align: center;
+}
+h3 {
+    text-decoration: underline;
+}
+main p{
+    background-color: #b3d4fc;
+
+}
+footer p {
+    background-color: #b3d4fc;
+    display: inline-block;
+    text-align: center;
+    margin: 10px auto;
+}
+p {
+
+}
+
+a {
+
+}
