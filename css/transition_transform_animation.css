@@ -1,0 +1,341 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+
+}
+body {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+blockquote {
+    margin: 40px 40px;
+    text-align: justify;
+}
+
+a {
+    font-size: 30px;
+    font-weight: bold;
+    color: magenta;
+    margin-left: 20px;
+    transition: 1s;
+}
+a:hover {
+    color: midnightblue;
+    cursor: pointer;
+}
+/* TRANSITION design */
+.one {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+.one:hover {
+    width: 500px;
+    cursor: pointer;
+}
+.two {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    transition: 1s;
+}
+.two:hover {
+    width: 300px;
+    height: 300px;
+    border: 10px solid maroon;
+    cursor: pointer;
+}
+.three {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    transition: width 1s, height 3s;
+}
+.three:hover {
+    width: 300px;
+    height: 300px;
+    border: 10px solid maroon;
+    cursor: pointer;
+}
+.four {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    transition: 5s;
+    /*transition-timing-function: ease-in-out;*/
+    /*transition-timing-function: ease-in;*/
+    /*transition-timing-function: ease;*/
+    /*transition-timing-function: linear;*/
+    transition-timing-function: steps(10);
+    /*transition-timing-function: cubic-bezier(1, 0.5, 0, 1);*/
+}
+.four:hover {
+    width: 300px;
+    height: 300px;
+    border: 10px solid maroon;
+    cursor: pointer;
+}
+/* TRANSFORMS design */
+.five {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    transition: 1s;
+}
+.five:hover {
+    width: 300px;
+    height: 300px;
+    border: 10px solid maroon;
+    cursor: pointer;
+    transform: translate(20px, 50px);
+}
+.six {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    transition: 1s;
+}
+.six:hover {
+    width: 300px;
+    height: 300px;
+    border: 10px solid maroon;
+    cursor: pointer;
+    transform: rotate(-45deg);
+}
+.seven {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    transition: 1s;
+}
+.seven:hover {
+    width: 300px;
+    height: 300px;
+    border: 10px solid maroon;
+    cursor: pointer;
+    transform: rotate3d(1, 3, 1, 45deg);
+}
+.eight {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    transition: 1s;
+}
+.eight:hover {
+    width: 300px;
+    height: 300px;
+    border: 10px solid maroon;
+    cursor: pointer;
+    transform: scale(2);
+}
+.nine {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    transition: 1s;
+}
+.nine:hover {
+    width: 300px;
+    height: 300px;
+    border: 10px solid maroon;
+    cursor: pointer;
+    transform: rotate3d(0, 0, 1, 180deg);
+}
+.ten {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    transition: 1s;
+}
+.ten:hover {
+    width: 300px;
+    height: 300px;
+    border: 10px solid maroon;
+    cursor: pointer;
+    transform: skew(45deg);
+}
+.eleven {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    transition: 1s;
+}
+.eleven:hover {
+    width: 300px;
+    height: 300px;
+    border: 10px solid maroon;
+    cursor: pointer;
+    transform: perspective(50px);
+}
+.twelve {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    transition: 1s;
+}
+.twelve:hover {
+    width: 300px;
+    height: 300px;
+    border: 10px solid maroon;
+    cursor: pointer;
+    transform-origin: clamp(10px, 2, 3);
+}
+/* ANIMATION design */
+.thirteen {
+    background-color: skyblue;
+    border: 5px solid orangered;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    animation-name: thirteen;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes thirteen {
+    from {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+    }
+    to {
+        background-color: blue;
+        width: 200px;
+        height: 200px;
+    }
+}
+.fourteen {
+    background-color: skyblue;
+    border: 5px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    animation-name: fourteen;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes fourteen {
+    0% {
+        background-color: black;
+    }
+    50% {
+        background-color: white;
+    }
+    100% {
+        background-color: black;
+    }
+}
+.fifteen {
+    background-color: skyblue;
+    border: 5px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+    animation-name: fifteen;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes fifteen {
+    0% {
+        background-color: black;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: cyan;
+    }
+    75% {
+        background-color: magenta;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+.parent {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.sixteen {
+    background-color: skyblue;
+    border: 5px solid black;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 10px 10px 100px 20px;
+    position: absolute;
+    left: 20px;
+    animation-name: sixteen;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes sixteen {
+    0% {
+        /*background-color: white;*/
+        left: 0;
+        top: 0;
+    }
+    25% {
+        /*background-color: yellow;*/
+        left: 300px;
+        top: 0;
+    }
+    50% {
+        /*background-color: cyan;*/
+        left: 300px;
+        top: 300px;
+    }
+    75% {
+        /*background-color: magenta;*/
+        left: 0;
+        top: 300px;
+    }
+    100% {
+        /*background-color: black;*/
+        left: 0;
+        top: 0;
+    }
+}

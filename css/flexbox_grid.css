@@ -1,0 +1,76 @@
+/*text-align is used to align items horizontally*/
+/*align-content is used to align items vertically*/
+/*justify-content is used to justify items horizontally*/
+
+:root {
+    --primary-color: mediumpurple;
+    --secondary-color: darkkhaki;
+}
+
+* {
+
+}
+
+html {
+
+}
+
+body {
+    margin: 20px;
+}
+
+h1 {
+
+}
+
+p {
+
+}
+
+a {
+
+}
+
+.flex {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex .item {
+    flex-basis: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.grid {
+    display: grid;
+    /*grid-template-columns: repeat(5, 2fr);*/
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    /*column-gap: 10px;*/
+    /*row-gap: 10px;*/
+    grid-template-rows: auto;
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    /*justify-content: space-evenly;*/
+    /*justify-content: safe;*/
+    justify-content: stretch;
+    align-content: center;
+}
+
+.grid .item {
+    background-color: var(--secondary-color);
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    align-content: center;
+}

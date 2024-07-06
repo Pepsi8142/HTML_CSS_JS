@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Group Utilities */
+@layer base {
+    h2 {
+        @apply text-2xl;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply px-4 py-1 border rounded-full shadow-md text-sm font-semibold hover:text-gray-50 hover:border-transparent duration-300 hover:shadow-md focus:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  dark:focus:ring-offset-gray-800 dark:focus:shadow-md
+    }
+
+    .btn-purple {
+        @apply border-purple-200 text-purple-600 hover:bg-purple-600 focus:ring-purple-600 dark:text-purple-400
+    }
+
+    .btn-green {
+        @apply border-green-200 text-green-600 hover:bg-green-600 focus:ring-green-600 dark:text-green-400
+    }
+}
+
+@layer utilities {
+    .text-body {
+        font-size: 15px;
+    }
+}
